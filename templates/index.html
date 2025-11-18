@@ -1,14 +1,106 @@
 <!doctype html>
-<html>
-    <head>
-        <title>Visualização dos dados</title>
-    </head>
-    <body>
-        <h1>Checkpoint 2</h1>
-        <h2>Enviar arquivo CSV</h2>
-        <form action="/display" method="post" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>GS Cloud – Upload de Arquivo CSV</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #F2F4F7;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: #FFF;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            color: #1A73E8;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .upload-box {
+            text-align: center;
+        }
+
+        input[type="file"] {
+            padding: 12px;
+            margin: 15px 0;
+            background: #F2F4F7;
+            border-radius: 6px;
+            border: 1px solid #CCC;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            padding: 12px 25px;
+            background: #1A73E8;
+            border: none;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #1558B0;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 13px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>GS Cloud – FIAP</h1>
+        <h2>Processamento e Visualização de Arquivo CSV</h2>
+
+        <p>
+            Selecione abaixo o arquivo <strong>Futurework.csv</strong> para carregá-lo na aplicação.
+            Após o envio, os dados serão processados e exibidos automaticamente.
+        </p>
+
+        <form action="/display" method="post" enctype="multipart/form-data" class="upload-box">
+            <input type="file" name="file" required>
+            <br>
+            <input type="submit" value="Enviar Arquivo">
         </form>
-    </body>
+
+        <footer>
+            Aplicação baseada no projeto DisplayCSV | Flask + Azure WebApp
+        </footer>
+    </div>
+
+</body>
 </html>
