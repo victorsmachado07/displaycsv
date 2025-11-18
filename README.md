@@ -48,9 +48,22 @@ displaycsv/
 │       └── deploy.yml             # Pipeline CI/CD – GitHub Actions
 │
 └── prints/                        # Prints obrigatórios da GS
-    ├── 01-cloudshell.png
-    ├── 02-actions.png
-    └── 03-webapp.png
+    ├── print-gs-cloud-1.png
+    ├── print-gs-cloud-2.png
+    ├── print-gs-cloud-3.png
+    ├── print-gs-cloud-4.png
+    ├── print-gs-cloud-5.png
+    ├── print-gs-cloud-6.png
+    ├── print-gs-cloud-7.png
+    ├── print-gs-cloud-8.png
+    ├── print-gs-cloud-9.png
+    ├── print-gs-cloud-10.png
+    ├── print-gs-cloud-11.png
+    ├── print-gs-cloud-12.png
+    ├── print-gs-cloud-13.png
+    ├── print-gs-cloud-14.png
+    └── print-gs-cloud-15.png
+
 ```
 
 ---
